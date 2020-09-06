@@ -7,39 +7,41 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="358dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
         android:text="Bem-Vindo ao SafeRoute"
         android:textAlignment="center"
         android:textColor="#AE0000"
-        android:textSize="28sp"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="235dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="80dp"
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42sp"
         android:text="Cadastre-se aqui:"
         android:textAlignment="center"
         android:textColor="#AE0000"
-        android:textSize="25sp"
-        app:layout_constraintHorizontal_bias="0.09"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds"/>
+        tools:ignore="MissingConstraints"/>
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="202dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="172dp"
-        android:text="Digite seu e-mail"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73sp"
+        android:text="Digite seu e-mail *"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -47,14 +49,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds"/>
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        android:hint="Digite aqui"
+        android:inputType="textWebEditText"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="160dp" />
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="202dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="312dp"
-        android:text="Digite uma senha"
+        android:id="@+id/p_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155sp"
+        android:text="Digite uma senha *"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -62,14 +76,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds"/>
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="330dp"
+        android:layout_height="50sp"
+        android:hint="Digite aqui"
+        android:inputType="textWebPassword"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/p_senha"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="279dp" />
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="202dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="436dp"
-        android:text="Repita sua senha"
+        android:id="@+id/s_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240sp"
+        android:text="Repita sua senha *"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -77,62 +103,45 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds"/>
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="330dp"
+        android:layout_height="50sp"
+        android:hint="Digite aqui"
+        android:inputType="textWebPassword"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/s_senha"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="392dp" />
 
     <Button
-        android:id="@+id/bt_calcular"
-        android:layout_width="214dp"
-        android:layout_height="52dp"
-        android:layout_marginVertical="60dp"
-        android:text="Cadastar"
+        android:id="@+id/cadastrar"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="40dp"
+        android:text="Cadastrar"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/text3"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="566dp"/>
-
-    <EditText
-        android:id="@+id/et_texto"
-        android:layout_width="349dp"
-        android:layout_height="58dp"
-        android:hint="Digite aqui"
-        android:inputType="textWebPassword"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="217dp"/>
-
-    <EditText
-        android:id="@+id/et_texto"
-        android:layout_width="349dp"
-        android:layout_height="58dp"
-        android:hint="Digite aqui"
-        android:inputType="textWebPassword"
-        android:textSize="30sp"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="353dp"/>
-
-    <EditText
-        android:id="@+id/et_texto"
-        android:layout_width="349dp"
-        android:layout_height="58dp"
-        android:hint="Digite aqui"
-        android:inputType="textWebPassword"
-        android:textSize="30sp"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="482dp"/>
+        tools:layout_editor_absoluteX="100sp"
+        android:onClick="Cadastrar"/>
 
     <TextView
-        android:id="@+id/tv_resultado"
-        android:layout_width="407dp"
-        android:layout_height="79dp"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200sp"
         android:text="Resultado"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrar"
+        app:layout_constraintVertical_bias="0.686"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"/>
+        tools:layout_editor_absoluteX="90sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
