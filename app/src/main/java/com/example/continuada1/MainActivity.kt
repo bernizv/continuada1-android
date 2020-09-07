@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Digite seu e-mail completo!", Toast.LENGTH_SHORT).show()
                 return
             }
-            priSenha > 6 ->{
+            priSenha < 6 ->{
                 Toast.makeText(this, "A senha deve conter mais de 6 caracteres!", Toast.LENGTH_SHORT).show()
                 return
             }
