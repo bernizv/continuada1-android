@@ -49,20 +49,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        android:inputType="textEmailAddress"/>
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/text"
         android:layout_width="331dp"
         android:layout_height="50dp"
         android:hint="Digite aqui"
-        android:inputType="textWebEditText"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/email"
         tools:ignore="MissingConstraints,UnknownId"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteY="160dp"
+        android:inputType="textEmailAddress"/>
 
     <TextView
         android:id="@+id/p_senha"
@@ -128,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@id/text3"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100sp"
-        android:onClick="Cadastrar"/>
+        android:onClick="cadastrar"/>
 
     <TextView
         android:id="@+id/resultado"
